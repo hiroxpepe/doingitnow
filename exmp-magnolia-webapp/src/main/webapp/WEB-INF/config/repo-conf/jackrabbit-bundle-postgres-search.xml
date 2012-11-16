@@ -23,10 +23,10 @@
     </FileSystem>
     <PersistenceManager class="org.apache.jackrabbit.core.persistence.bundle.PostgreSQLPersistenceManager">
       <param name="driver" value="org.postgresql.Driver"/>
-      <param name="url" value="jdbc:postgresql://localhost:5432/magnolia" />
+      <param name="url" value="jdbc:postgresql://ec2-54-243-93-37.compute-1.amazonaws.com/dbcnn1huo2pco6" />
       <param name="schema" value="postgresql" /><!-- warning, this is not the schema name, it's the db type -->
-      <param name="user" value="username" />
-      <param name="password" value="password" />
+      <param name="user" value="hmoiayplpimdjl" />
+      <param name="password" value="gigYIBYKdeVitFJSdr9E2g62Sh" />
       <param name="schemaObjectPrefix" value="${wsp.name}_" />
       <param name="externalBLOBs" value="false" />
     </PersistenceManager>
@@ -61,10 +61,10 @@
     </FileSystem>
     <PersistenceManager class="org.apache.jackrabbit.core.persistence.bundle.PostgreSQLPersistenceManager">
       <param name="driver" value="org.postgresql.Driver"/>
-      <param name="url" value="jdbc:postgresql://localhost:5432/magnolia" />
+      <param name="url" value="jdbc:postgresql://ec2-54-243-93-37.compute-1.amazonaws.com/dbcnn1huo2pco6" />
       <param name="schema" value="postgresql" /><!-- warning, this is not the schema name, it's the db type -->
-      <param name="user" value="username" />
-      <param name="password" value="password" />
+      <param name="user" value="hmoiayplpimdjl" />
+      <param name="password" value="gigYIBYKdeVitFJSdr9E2g62Sh" />
       <param name="schemaObjectPrefix" value="version_" />
       <param name="externalBLOBs" value="false" />
     </PersistenceManager>
