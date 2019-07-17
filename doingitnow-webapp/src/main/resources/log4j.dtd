@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/log4j.dtd
+
+-->
+
+<!--
+    An example how to use this DTD from your XML document:
+
+    <?xml version="1.0"?>
+
+    <!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+    <log4j:configuration>
+    ...
+    </log4j:configuration>
+-->
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT log4j:configuration (appender|category|root)*>
+<!ATTLIST log4j:configuration
+    xmlns:log4j CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT appender (param|layout|filter)*>
+<!ATTLIST appender
+    name CDATA #IMPLIED
+    class CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT param EMPTY>
+<!ATTLIST param
+    name CDATA #IMPLIED
+    value CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT layout (param)*>
+<!ATTLIST layout
+    class CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT filter (param)*>
+<!ATTLIST filter
+    class CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT category (priority)*>
+<!ATTLIST category
+    name CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT priority EMPTY>
+<!ATTLIST priority
+    value CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT root (priority|appender-ref)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT appender-ref EMPTY>
+<!ATTLIST appender-ref
+    ref CDATA #IMPLIED
+  >

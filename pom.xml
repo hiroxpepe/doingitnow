@@ -2,23 +2,23 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    
-    <groupId>org.examproject</groupId>
-    <artifactId>magnolia-examproject</artifactId>
+
+    <groupId>net.studiomeowtoon</groupId>
+    <artifactId>doingitnow-project</artifactId>
     <packaging>pom</packaging>
-    <version>1.1.0-SNAPSHOT</version>
-    <name>magnolia-examproject</name>
-    
+    <version>1.0.0</version>
+    <name>doingitnow-project</name>
+
     <properties>
-        <java.version>1.6</java.version>
+        <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    
+
     <modules>
-        <module>exmp-magnolia-webapp</module>
-        <module>exmp-blossom</module>
+        <module>doingitnow-webapp</module>
+        <module>doingitnow-lib</module>
     </modules>
-    
+
     <build>
         <plugins>
             <plugin>
@@ -51,12 +51,19 @@
                         <configuration>
                             <artifactItems>
                                 <artifactItem>
-                                    <groupId>org.mortbay.jetty</groupId>
+                                    <!--<groupId>org.mortbay.jetty</groupId>-->
+                                    <groupId>org.eclipse.jetty</groupId>
                                     <artifactId>jetty-runner</artifactId>
                                     <!-- I have getting a running, only on the jetty 7.x.x .. -->
                                     <!-- In this case not work on the Jetty 8.x.x , maybe JSTL's dependence.-->
-                                    <!--<version>7.6.1.v20120215</version>-->
-                                    <version>7.4.5.v20110725</version>
+                                    <!--<version>7.6.1.v20120215</version>NG-->
+                                    <!--<version>7.6.16.v20140903</version>NG-->
+                                    <!--<version>7.5.4.v20111024</version>RUN-->
+                                    <!--<version>7.4.5.v20110725</version>-->
+                                    <version>9.4.19.v20190610</version>
+                                    <!--<version>9.4.2.v20170220</version>NG-->
+                                    <!--<version>9.3.0.v20150612</version>NG-->
+                                    <!--<version>9.0.7.v20131107</version>NG-->
                                     <destFileName>jetty-runner.jar</destFileName>
                                 </artifactItem>
                             </artifactItems>
