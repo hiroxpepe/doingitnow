@@ -8,6 +8,6 @@
         <title>Heroku App</title>
     </head>
     <body>
-        <h1>Hello Heroku App!</h1>
+        <h1>Hello Heroku App from GitHub!</h1>
     </body>
 </html>
